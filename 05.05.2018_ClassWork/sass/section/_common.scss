@@ -1,0 +1,30 @@
+body{
+    margin: 0px auto;
+}
+#container{
+    width: 1200px;
+    margin: 0px auto;
+    background: gold;
+}
+.middle-content{
+    margin: 40px 0px;
+    display: grid;
+    grid-template-columns: 300px 600px 300px;
+    grid-template-rows: 1fr;
+}
+@media screen and (max-width:600px){
+    body{
+        margin: 0px auto;
+    }
+    #container{
+        width: 350px;
+        margin: 0px auto;
+        background: gold;
+    }
+    .middle-content{
+        margin: 40px 0px;
+        display: grid;
+        grid-template-columns:300px;
+        grid-template-rows: 1fr;
+    }
+}

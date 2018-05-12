@@ -1,0 +1,85 @@
+#container{
+    header{
+        display: grid;
+        grid-template-columns: 400px 800px;
+        grid-template-rows: 1fr;
+        img{
+            width: 100%;
+        }
+        nav{
+            position: relative;
+            button{
+                display: block;
+                opacity: 0;
+            }
+            ul{
+                margin: 0px;
+                padding: 0px;
+                float: right;
+                li{
+                    margin-right: 50px;
+                    list-style: none;
+                    float: left;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 1em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: black;
+                    line-height: 93px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:600px){
+    #container{
+        header{
+            display: grid;
+            grid-template-columns: 250px 50px;
+            grid-template-rows: 1fr;
+            position: relative;
+            left: 10px;
+            img{
+                width: 100%;
+            }
+            nav{
+                button{
+                    position: absolute;
+                    top: 15px;
+                    right: 0px;
+                    border: none;
+                    outline: none;
+                    background: grey;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: .9em;
+                    font-weight: bold;
+                    padding: 4px;
+                    cursor: pointer;
+                    transition: all .4s;
+                    &:hover{
+                        background: red;
+                        color: white;
+                    }
+                    opacity: 1;
+                }
+                ul{
+                    margin: 0px;
+                    padding: 0px;
+                    float: right;
+                    display: none;
+                    li{
+                        margin-right: 50px;
+                        list-style: none;
+                        float: left;
+                        font-family: 'Times New Roman', Times, serif;
+                        font-size: 1em;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: black;
+                        line-height: 93px;
+                    }
+                }
+            }
+        }
+    }
+}

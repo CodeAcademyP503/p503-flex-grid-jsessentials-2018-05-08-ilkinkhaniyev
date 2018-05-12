@@ -1,0 +1,99 @@
+#container{
+    .right-sidebar{
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 5px;
+        .adverts{
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        aside{
+            opacity: 1;
+            section{
+                border: 1px solid grey;
+                border-radius: 10px;
+                margin-bottom: 5px;
+                header{
+                    display: block;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin: 10px 0px;
+                    cursor: pointer;
+                    transition: all .4s;
+                    &:hover{
+                        color: red;
+                    }
+                }
+                footer{
+                    font-family: 'Times New Roman', Times, serif;
+                    font-weight: bold;
+                    margin: 0px 10px;
+                    cursor: pointer;
+                    transition: all .4s;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media screen and (max-width:600px){
+    #container{
+        .right-sidebar{
+            display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: repeat(2,1fr);
+            grid-gap: 5px;
+            position: relative;
+            left: 25px;
+            .adverts{
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            aside{
+                display: none;
+                opacity: 0;
+                section{
+                    border: 1px solid grey;
+                    border-radius: 10px;
+                    margin-bottom: 5px;
+                    header{
+                        display: block;
+                        font-family: 'Times New Roman', Times, serif;
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        text-align: center;
+                        margin: 10px 0px;
+                        cursor: pointer;
+                        transition: all .4s;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                    footer{
+                        font-family: 'Times New Roman', Times, serif;
+                        font-weight: bold;
+                        margin: 0px 10px;
+                        cursor: pointer;
+                        transition: all .4s;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+}

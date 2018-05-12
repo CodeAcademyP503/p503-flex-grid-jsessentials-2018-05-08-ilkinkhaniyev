@@ -1,0 +1,88 @@
+#container{
+    main{
+        display: grid;
+        grid-template-columns: 600px;
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 5px;
+        .info{
+            border: 1px solid grey;
+            border-radius: 10px;
+            margin: 0px 15px;
+            margin-bottom: 5px;
+            padding: 0px 20px;
+            header{
+                h2{
+                    margin: 10px 10px;
+                }
+            }
+            footer{
+                position: relative;
+                p{
+                    margin: 10px 10px;
+                    font-weight: bold;
+                    span{
+                        margin-left: 30px;
+                    }
+                }
+                a{
+                    position: absolute;
+                    right: 0px;
+                    bottom: 0px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: all .4s;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:600px){
+    #container{
+        main{
+            display: grid;
+            grid-template-columns: 350px;
+            grid-template-rows: repeat(3,1fr);
+            grid-gap: 5px;
+            .info{
+                border: 1px solid grey;
+                border-radius: 10px;
+                margin: 0px 15px;
+                margin-bottom: 5px;
+                padding: 0px 20px;
+                header{
+                    h2{
+                        margin: 10px 10px;
+                    }
+                }
+                footer{
+                    position: relative;
+                    bottom: 10px;
+                    p{
+                        margin: 10px 10px;
+                        font-weight: bold;
+                        span{
+                            position: absolute;
+                            left: 0px;
+                            bottom: -18px;
+                            margin-left: 30px;
+                        }
+                    }
+                    a{
+                        position: absolute;
+                        right: 0px;
+                        bottom: 0px;
+                        text-decoration: none;
+                        cursor: pointer;
+                        transition: all .4s;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}

@@ -1,0 +1,19 @@
+#container{
+    .footer{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: .8em;
+        padding: 20px 40px;;
+    }
+}
+@media screen and (max-width:600px){
+    #container{
+        .footer{
+            display: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: .8em;
+            padding: 20px 40px;;
+        }
+    }
+}
