@@ -1,0 +1,382 @@
+body {
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+}
+
+.announceHead, .Container .LeftContent .vip .AnnounceHead, .Container .LeftContent .sell .AnnounceHead, .Container .LeftContent .rent .AnnounceHead, .Container .LeftContent .users .UsersHead, .Container .LeftContent .links .LinksHead {
+  margin: 5px;
+  border-left: 5px solid #f6a828;
+}
+.announceHead h4, .Container .LeftContent .vip .AnnounceHead h4, .Container .LeftContent .sell .AnnounceHead h4, .Container .LeftContent .rent .AnnounceHead h4, .Container .LeftContent .users .UsersHead h4, .Container .LeftContent .links .LinksHead h4 {
+  margin: 2px;
+  font-size: 1em;
+}
+
+.announceFooter, .Container .LeftContent .vip .AnnounceFooter, .Container .LeftContent .sell .AnnounceFooter, .Container .LeftContent .rent .AnnounceFooter {
+  display: flex;
+  flex-wrap: wrap;
+}
+.announceFooter .FootRow, .Container .LeftContent .vip .AnnounceFooter .FootRow, .Container .LeftContent .sell .AnnounceFooter .FootRow, .Container .LeftContent .rent .AnnounceFooter .FootRow {
+  position: relative;
+  width: 150px;
+  height: 155px;
+  background-color: #d8d6d6;
+  margin: 5px;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+.announceFooter .FootRow:hover, .Container .LeftContent .vip .AnnounceFooter .FootRow:hover, .Container .LeftContent .sell .AnnounceFooter .FootRow:hover, .Container .LeftContent .rent .AnnounceFooter .FootRow:hover {
+  box-shadow: 1px 1px 3px #676767;
+}
+.announceFooter .FootRow img, .Container .LeftContent .vip .AnnounceFooter .FootRow img, .Container .LeftContent .sell .AnnounceFooter .FootRow img, .Container .LeftContent .rent .AnnounceFooter .FootRow img {
+  position: relative;
+  width: 100%;
+}
+.announceFooter .FootRow .top, .Container .LeftContent .vip .AnnounceFooter .FootRow .top, .Container .LeftContent .sell .AnnounceFooter .FootRow .top, .Container .LeftContent .rent .AnnounceFooter .FootRow .top {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.announceFooter .FootRow .top p, .Container .LeftContent .vip .AnnounceFooter .FootRow .top p, .Container .LeftContent .sell .AnnounceFooter .FootRow .top p, .Container .LeftContent .rent .AnnounceFooter .FootRow .top p {
+  margin: 0px;
+  padding: 0px 8px;
+  color: white;
+  font-size: .9em;
+  line-height: 20px;
+}
+.announceFooter .FootRow .top p span, .Container .LeftContent .vip .AnnounceFooter .FootRow .top p span, .Container .LeftContent .sell .AnnounceFooter .FootRow .top p span, .Container .LeftContent .rent .AnnounceFooter .FootRow .top p span {
+  color: #ff7a05;
+  font-weight: bold;
+}
+.announceFooter .FootRow .bottom, .Container .LeftContent .vip .AnnounceFooter .FootRow .bottom, .Container .LeftContent .sell .AnnounceFooter .FootRow .bottom, .Container .LeftContent .rent .AnnounceFooter .FootRow .bottom {
+  padding: 0px 8px;
+}
+.announceFooter .FootRow .bottom p, .Container .LeftContent .vip .AnnounceFooter .FootRow .bottom p, .Container .LeftContent .sell .AnnounceFooter .FootRow .bottom p, .Container .LeftContent .rent .AnnounceFooter .FootRow .bottom p {
+  margin: 0px;
+  font-size: .8em;
+  color: #464545;
+}
+
+.TopBar {
+  display: grid;
+  grid-template-columns: 200px 620px 200px;
+  grid-template-rows: auto;
+  width: 100%;
+  background-color: #6f6f6f;
+  align-items: center;
+  justify-content: center;
+}
+.TopBar img {
+  width: 100%;
+}
+.TopBar .TopNav ul {
+  margin: 0px;
+}
+.TopBar .TopNav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 15px 0px;
+  margin-right: 35px;
+}
+.TopBar .TopNav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+.TopBar .TopNav ul li a:hover {
+  color: #ff7a05;
+}
+.TopBar .TopNav ul li input {
+  width: 60px;
+  height: 20px;
+  border: none;
+  border-radius: 2px;
+}
+.TopBar .TopNav ul li button {
+  height: 20px;
+  border: none;
+  border-radius: 0px 2px 2px 0px;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+.TopBar .TopNav ul li button:hover {
+  background-color: #ff7a05;
+}
+.TopBar .TopNav ul li button i {
+  color: #f0f0f0;
+}
+.TopBar .BtnRight {
+  justify-self: center;
+  width: 170px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f6a828;
+  color: white;
+  font-size: 1.1em;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+.TopBar .BtnRight:hover {
+  background-color: #ff7a05;
+}
+
+.Container {
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 820px 180px;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+.Container .LeftContent {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 215px repeat(4, auto);
+  grid-gap: 20px;
+}
+.Container .LeftContent .option {
+  display: grid;
+  grid-template-columns: 630px 170px;
+  grid-template-rows: 195px;
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+.Container .LeftContent .option .form {
+  border: 1px solid #84ae3e;
+  border-radius: 5px;
+  background-color: #84ae3e;
+}
+.Container .LeftContent .option .form .FormHead {
+  display: flex;
+  flex-wrap: wrap;
+  height: 162px;
+  border-bottom: 1px solid #4a6122;
+}
+.Container .LeftContent .option .form .FormHead .LeftBar {
+  margin: 5px 5px;
+}
+.Container .LeftContent .option .form .FormHead .LeftBar label {
+  display: block;
+}
+.Container .LeftContent .option .form .FormHead .LeftBar label span {
+  float: left;
+  margin: 10px 5px;
+  font-size: 1em;
+  color: white;
+}
+.Container .LeftContent .option .form .FormHead .LeftBar label #big {
+  margin: 5px 0px;
+  float: right;
+  width: 180px;
+  height: 28px;
+  padding-left: 10px;
+  font-size: .9em;
+  border: 1px solid #73894F;
+  border-radius: 5px;
+  outline: none;
+  color: #555;
+  box-shadow: 0px 0px 4px 0px #6D8F34;
+}
+.Container .LeftContent .option .form .FormHead .RightBar {
+  margin: 5px -30px;
+}
+.Container .LeftContent .option .form .FormHead .RightBar label {
+  display: block;
+}
+.Container .LeftContent .option .form .FormHead .RightBar label span {
+  float: left;
+  margin: 10px 50px;
+  font-size: 1em;
+  color: white;
+}
+.Container .LeftContent .option .form .FormHead .RightBar label #small {
+  margin: 5px 2px;
+  float: right;
+  width: 80px;
+  height: 28px;
+  padding-left: 10px;
+  font-size: .9em;
+  border: 1px solid #73894F;
+  border-radius: 5px;
+  outline: none;
+  color: #555;
+  box-shadow: 0px 0px 4px 0px #6D8F34;
+}
+.Container .LeftContent .option .form .FormFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+  height: 33px;
+}
+.Container .LeftContent .option .form .FormFooter .FormNav ul {
+  margin: 0px;
+  padding: 0px;
+}
+.Container .LeftContent .option .form .FormFooter .FormNav ul li {
+  margin-left: 30px;
+  display: inline-block;
+  list-style: none;
+  font-size: .9em;
+  color: white;
+  line-height: 33px;
+}
+.Container .LeftContent .option .form .FormFooter .FormNav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+.Container .LeftContent .option .form .FormFooter .FormNav ul li a:hover {
+  color: #f6a828;
+}
+.Container .LeftContent .option .form .FormFooter .FormNav ul li #choose {
+  margin: 0px;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+}
+.Container .LeftContent .option .form .FormFooter .FormNav ul li input {
+  line-height: 33px;
+  margin: 0px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 0px 0px 5px 0px;
+  outline: none;
+  font-size: 1em;
+  color: white;
+  background-color: #f6a828;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+.Container .LeftContent .option .form .FormFooter .FormNav ul li input:hover {
+  background-color: #ff7a05;
+}
+.Container .LeftContent .option .login ul {
+  padding: 0px;
+}
+.Container .LeftContent .option .login ul li {
+  margin: 5px 0px;
+  padding: 5px 0px;
+  display: block;
+  list-style: none;
+  border: 1px solid #8fb357;
+  border-radius: 5px;
+  text-align: center;
+  font-size: .9em;
+  background: #f4ffe2;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+.Container .LeftContent .option .login ul li:first-child {
+  color: white;
+  background: #84ae3e;
+}
+.Container .LeftContent .option .login ul li:hover {
+  background: #ffdcaa;
+}
+.Container .LeftContent .option .login ul li i {
+  font-size: 10px;
+  color: white;
+}
+.Container .LeftContent .sell .AnnounceHead {
+  border-left: 5px solid green;
+}
+.Container .LeftContent .rent .AnnounceHead {
+  border-left: 5px solid green;
+}
+.Container .LeftContent .users .UsersHead {
+  border-left: 5px solid green;
+}
+.Container .LeftContent .users .UsersFooter {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Container .LeftContent .users .UsersFooter .UsersNav ul {
+  margin: 0px;
+  padding: 0px 5px;
+}
+.Container .LeftContent .users .UsersFooter .UsersNav ul li {
+  width: 145px;
+  display: inline-block;
+  margin: 3px 5px;
+  list-style: none;
+  border-bottom: 1px solid #e5e5e5;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+.Container .LeftContent .users .UsersFooter .UsersNav ul li:hover {
+  border-color: green;
+}
+.Container .LeftContent .users .UsersFooter .UsersNav ul li i {
+  font-size: 13px;
+  color: #e5e5e5;
+}
+.Container .LeftContent .users .UsersFooter .UsersNav ul li a {
+  font-size: .8em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.Container .LeftContent .links .LinksHead {
+  border-left: 5px solid green;
+}
+.Container .LeftContent .links .LinksFooter {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Container .LeftContent .links .LinksFooter .LinksNav ul {
+  margin: 0px;
+  padding: 0px;
+}
+.Container .LeftContent .links .LinksFooter .LinksNav ul li {
+  margin: 3px 2px;
+  padding: 3px 5px;
+  display: inline-block;
+  list-style: none;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+.Container .LeftContent .links .LinksFooter .LinksNav ul li:hover {
+  background-color: #ffdcaa;
+}
+.Container .LeftContent .links .LinksFooter .LinksNav ul li a {
+  text-decoration: none;
+  color: #5c5b5b;
+  font-size: .9em;
+}
+.Container .RightContent {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(10, auto);
+  grid-gap: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.Container .RightContent img {
+  width: 100%;
+}
+
+.Copyright {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  width: 100%;
+  background-color: #6f6f6f;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.Copyright .CopyHead p {
+  margin: 5px 0px;
+  font-size: .9em;
+  color: white;
+  text-align: center;
+}
